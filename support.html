@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIRI 고객지원</title>
+  <meta name="description" content="MIRI 앱 사용 중 문제가 생기셨나요? 아래 방법으로 문의해 주세요." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #1B0A3E;
+      --accent: #7B2FF7;
+      --white: #FFFFFF;
+      --gray: rgba(255,255,255,0.6);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--white);
+      min-height: 100vh;
+      padding: 60px 24px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+    }
+
+    .back:hover { color: var(--white); }
+
+    h1 {
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+      background: linear-gradient(90deg, #fff 0%, #B97CFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      color: var(--gray);
+      margin-bottom: 48px;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* FAQ */
+    .faq-section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #B97CFF;
+    }
+
+    .faq-item {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin-bottom: 12px;
+    }
+
+    .faq-item h3 {
+      font-size: 0.98rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .faq-item p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    /* Contact */
+    .contact-section {
+      margin-top: 56px;
+      background: rgba(123,47,247,0.1);
+      border: 1px solid rgba(123,47,247,0.3);
+      border-radius: 20px;
+      padding: 32px 28px;
+    }
+
+    .contact-section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .contact-section p {
+      color: var(--gray);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 13px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: opacity 0.2s;
+    }
+
+    .contact-btn:hover { opacity: 0.85; }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: rgba(255,255,255,0.25);
+      font-size: 0.82rem;
+    }
+
+    footer a {
+      color: rgba(255,255,255,0.4);
+      text-decoration: none;
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <a href="index.html" class="back">← MIRI 홈으로</a>
+
+    <h1>고객지원</h1>
+    <p class="subtitle">
+      MIRI를 사용하시면서 불편한 점이 있으셨나요?<br>
+      아래 자주 묻는 질문을 먼저 확인해 보시고, 해결이 안 되시면 문의 남겨주세요.
+    </p>
+
+    <!-- FAQ -->
+    <div class="faq-section">
+      <h2>자주 묻는 질문</h2>
+
+      <div class="faq-item">
+        <h3>로그인이 안 돼요</h3>
+        <p>이메일과 비밀번호를 다시 확인해 주세요. 비밀번호는 영문+숫자 포함 8자 이상이어야 합니다. 회원가입 시 이메일 인증이 필요하니 메일함을 확인해 주세요.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>분석 결과가 나오지 않아요 / 오래 걸려요</h3>
+        <p>MIRI는 AI 서버와 통신하기 때문에 네트워크 상태에 따라 10~20초 정도 소요될 수 있습니다. 인터넷 연결을 확인하시고, 오류가 반복되면 앱을 재시작해 주세요.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>프로필 정보를 수정하고 싶어요</h3>
+        <p>앱 하단 프로필 탭에서 MBTI·성향 슬라이더를 언제든 수정할 수 있습니다.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>계정을 삭제하고 싶어요</h3>
+        <p>아래 문의하기 버튼을 통해 계정 삭제를 요청해 주세요. 요청 후 영업일 기준 3일 이내 처리해 드립니다.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>개인정보는 어떻게 처리되나요?</h3>
+        <p>MIRI는 서비스 제공에 필요한 최소한의 정보만 수집합니다. 자세한 내용은 <a href="privacy.html" style="color:#B97CFF;">개인정보처리방침</a>을 확인해 주세요.</p>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-section">
+      <h2>💬 직접 문의하기</h2>
+      <p>
+        위 내용으로 해결되지 않으셨나요?<br>
+        문의 내용을 남겨주시면 빠르게 답변드리겠습니다.
+        (영업일 기준 1~2일 내 답변)
+      </p>
+      <a href="https://forms.gle/XXXXXXXXXXXXXXXX" class="contact-btn" target="_blank">
+        문의하기 →
+      </a>
+    </div>
+
+    <footer>
+      <p>
+        <a href="index.html">홈</a>
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="terms.html">이용약관</a>
+      </p>
+      <p style="margin-top:10px;">© 2026 MIRI. All rights reserved.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
